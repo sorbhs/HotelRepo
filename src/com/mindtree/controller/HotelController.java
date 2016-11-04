@@ -25,7 +25,7 @@ import com.mindtree.service.HotelService;
 /**
  * @author M1035913 hi this is first commit
  * this is second commit
- * 
+ * edited from github
  *
  */
 @Controller
