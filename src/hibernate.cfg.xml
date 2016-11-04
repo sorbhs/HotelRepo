@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	
+	
+	<session-factory>
+	
+<!-- 	 <prop name="hibernate.c3p0.min_size">3</prop>
+    <prop name="hibernate.c3p0.max_size">19</prop>
+    <prop name="hibernate.c3p0.timeout">120</prop>
+    <prop name="hibernate.c3p0.max_statements">10</prop>  	
+     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+           <property name="driverClass" value="com.mysql.jdbc.Driver" />
+           <property name="jdbcUrl" value="jdbc:mysql://localhost/db_HotelReservation" />
+           <property name="user" value="root" />
+           <property name="password" value="Welcome123" /> 
+     -->
+	
+		<!-- 172.31.26.66:3306
+ -->
+ 		<property name="hbm2ddl.auto">update</property>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+	 <!--   <property name="connection.url">jdbc:mysql://sorbhsdbinstance.cvsy7d6kc9ew.ap-southeast-1.rds.amazonaws.com:3306/HotelReservation</property>
+		  -->  
+		  <property name="connection.url">jdbc:mysql://localhost:3306/db_hotelreservation</property>
+		  
+		<property name="connection.username">root</property>
+		<!-- <property name="connection.password">rootroot</property> -->
+		<property name="connection.password">welcome123</property>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="show_sql">true</property>
+
+		<!-- <mapping resource="user.hbm.xml"/> -->
+		<mapping class="com.mindtree.entity.Hotel"/>
+		<mapping class="com.mindtree.entity.Users"/>
+		<mapping class="com.mindtree.entity.BookingDetails"/>
+	</session-factory>
+</hibernate-configuration>
+ 
