@@ -24,9 +24,6 @@ import com.mindtree.service.HotelService;
 
 /**
  * @author M1035913 hi this is first commit
- * hiiii second commit
- * 
- * 
  * this is second commit
  * 
  *
